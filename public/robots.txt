@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://boombangh-website.vercel.app/sitemap.xml
