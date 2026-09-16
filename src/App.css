@@ -3323,3 +3323,545 @@ main {
     transition-duration: 0.01ms !important;
   }
 }
+/* =========================================================
+   BOOMBAANGH — RUM PAGE
+   ========================================================= */
+
+.rum-page {
+  background: #050505;
+  color: #f5f1eb;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.rum-page button,
+.rum-page a {
+  font: inherit;
+}
+
+.rum-eyebrow {
+  margin: 0 0 24px;
+  color: #ff5c00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* HERO */
+
+.rum-hero {
+  position: relative;
+  min-height: 100vh;
+  padding: 150px 7vw 80px;
+  display: grid;
+  grid-template-columns: minmax(260px, 0.85fr) minmax(360px, 1.15fr);
+  align-items: center;
+  gap: 50px;
+  isolation: isolate;
+}
+
+.rum-hero-copy {
+  position: relative;
+  z-index: 3;
+}
+
+.rum-hero h1 {
+  margin: 0;
+  font-size: clamp(76px, 11vw, 170px);
+  line-height: 0.82;
+  letter-spacing: -0.075em;
+  font-weight: 800;
+}
+
+.rum-intro {
+  margin: 42px 0 30px;
+  color: #bdb7b0;
+  font-size: clamp(18px, 2vw, 25px);
+  line-height: 1.35;
+}
+
+.rum-abv {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.rum-abv span {
+  font-size: 31px;
+  font-weight: 800;
+}
+
+.rum-abv small {
+  color: #ff5c00;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.rum-bottle-stage {
+  position: relative;
+  min-height: 650px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rum-bottle {
+  position: relative;
+  z-index: 4;
+  width: min(430px, 72%);
+  max-height: 700px;
+  object-fit: contain;
+  filter: drop-shadow(0 30px 55px rgba(0, 0, 0, 0.65));
+}
+
+.rum-glow {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 92, 0, 0.3) 0%,
+    rgba(255, 92, 0, 0.08) 42%,
+    transparent 72%
+  );
+  filter: blur(12px);
+}
+
+.rum-ring {
+  position: absolute;
+  border: 1px solid rgba(255, 92, 0, 0.25);
+  border-radius: 50%;
+}
+
+.rum-ring-one {
+  width: 520px;
+  height: 520px;
+}
+
+.rum-ring-two {
+  width: 680px;
+  height: 680px;
+  border-color: rgba(255, 255, 255, 0.07);
+}
+
+.rum-stage-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  z-index: 5;
+  width: 100%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  color: #77716b;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+}
+
+.rum-scroll {
+  position: absolute;
+  left: 7vw;
+  bottom: 35px;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: #f5f1eb;
+  cursor: pointer;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
+/* HERITAGE */
+
+.rum-heritage {
+  position: relative;
+  padding: 150px 7vw;
+  display: grid;
+  grid-template-columns: 80px minmax(300px, 1fr) minmax(300px, 0.8fr);
+  gap: 50px;
+  background: #f1eee8;
+  color: #080808;
+}
+
+.rum-section-number {
+  color: #ff5c00;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.rum-heritage .rum-eyebrow {
+  color: #ff5c00;
+}
+
+.rum-heritage-heading h2,
+.rum-character h2,
+.rum-connect h2 {
+  margin: 0;
+  font-size: clamp(54px, 7vw, 110px);
+  line-height: 0.86;
+  letter-spacing: -0.065em;
+}
+
+.rum-heritage-copy {
+  max-width: 560px;
+  padding-top: 45px;
+}
+
+.rum-heritage-copy p {
+  margin: 0 0 28px;
+  color: #5c5751;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.rum-heritage-copy .rum-large-copy {
+  color: #111;
+  font-size: clamp(22px, 2.2vw, 31px);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+}
+
+/* STORY BLOCK */
+
+.rum-story-block {
+  min-height: 680px;
+  padding: 100px 7vw;
+  display: flex;
+  align-items: flex-end;
+  background:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(255, 92, 0, 0.2),
+      transparent 28%
+    ),
+    linear-gradient(135deg, #151515 0%, #070707 60%, #101010 100%);
+}
+
+.rum-story-overlay {
+  max-width: 750px;
+}
+
+.rum-story-overlay h2 {
+  margin: 0 0 40px;
+  font-size: clamp(70px, 11vw, 170px);
+  line-height: 0.8;
+  letter-spacing: -0.075em;
+}
+
+.rum-story-overlay > p:last-child {
+  max-width: 570px;
+  margin: 0;
+  color: #a9a39d;
+  font-size: 19px;
+  line-height: 1.65;
+}
+
+/* CHARACTER */
+
+.rum-character {
+  padding: 150px 7vw;
+  background: #0b0b0b;
+}
+
+.rum-character-grid {
+  margin-top: 70px;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 100px;
+}
+
+.rum-character-copy {
+  max-width: 530px;
+  padding-top: 20px;
+}
+
+.rum-character-copy > p {
+  margin: 0 0 65px;
+  color: #a8a29c;
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.rum-detail-list {
+  border-top: 1px solid #292929;
+}
+
+.rum-detail-list > div {
+  display: grid;
+  grid-template-columns: 45px 1fr;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #292929;
+}
+
+.rum-detail-list span {
+  color: #ff5c00;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+}
+
+.rum-detail-list strong {
+  font-size: 11px;
+  letter-spacing: 0.16em;
+}
+
+/* SIGNATURE */
+
+.rum-signature {
+  min-height: 90vh;
+  padding: 150px 7vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ff5c00;
+  color: #050505;
+}
+
+.rum-signature .rum-eyebrow {
+  color: #050505;
+}
+
+.rum-signature h2 {
+  margin: 0;
+  font-size: clamp(70px, 12vw, 190px);
+  line-height: 0.78;
+  letter-spacing: -0.08em;
+}
+
+.rum-signature h2 span {
+  display: inline-block;
+}
+
+.rum-signature-line {
+  margin: 55px 0 0;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.25em;
+}
+
+/* CONNECT */
+
+.rum-connect {
+  padding: 150px 7vw;
+  display: grid;
+  grid-template-columns: 1fr 0.8fr;
+  gap: 100px;
+  background: #f1eee8;
+  color: #080808;
+}
+
+.rum-socials {
+  align-self: end;
+  border-top: 1px solid #c9c4bc;
+}
+
+.rum-socials a {
+  display: grid;
+  grid-template-columns: 35px 1fr 25px;
+  align-items: center;
+  gap: 20px;
+  padding: 26px 0;
+  border-bottom: 1px solid #c9c4bc;
+  color: #080808;
+  text-decoration: none;
+  transition:
+    padding 0.3s ease,
+    color 0.3s ease;
+}
+
+.rum-socials a:hover {
+  padding-left: 10px;
+  color: #ff5c00;
+}
+
+.rum-socials span {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+
+.rum-footer {
+  padding: 35px 7vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  background: #050505;
+  color: #8f8982;
+}
+
+.rum-footer div {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.rum-footer strong {
+  color: #f5f1eb;
+  font-size: 13px;
+  letter-spacing: 0.12em;
+}
+
+.rum-footer span,
+.rum-footer p {
+  margin: 0;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+}
+
+.rum-footer p {
+  color: #66615c;
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+  .rum-hero {
+    min-height: auto;
+    padding: 125px 7vw 100px;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .rum-hero h1 {
+    font-size: clamp(74px, 21vw, 130px);
+  }
+
+  .rum-bottle-stage {
+    min-height: 560px;
+    margin-top: 15px;
+  }
+
+  .rum-bottle {
+    width: min(350px, 75%);
+  }
+
+  .rum-glow {
+    width: 380px;
+    height: 380px;
+  }
+
+  .rum-ring-one {
+    width: 420px;
+    height: 420px;
+  }
+
+  .rum-ring-two {
+    width: 520px;
+    height: 520px;
+  }
+
+  .rum-scroll {
+    display: none;
+  }
+
+  .rum-heritage {
+    padding: 100px 7vw;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .rum-heritage-copy {
+    padding-top: 0;
+  }
+
+  .rum-story-block {
+    min-height: 570px;
+  }
+
+  .rum-character {
+    padding: 100px 7vw;
+  }
+
+  .rum-character-grid {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+
+  .rum-connect {
+    padding: 100px 7vw;
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 640px) {
+  .rum-hero {
+    padding-top: 105px;
+  }
+
+  .rum-bottle-stage {
+    min-height: 470px;
+  }
+
+  .rum-bottle {
+    width: 78%;
+  }
+
+  .rum-glow {
+    width: 300px;
+    height: 300px;
+  }
+
+  .rum-ring-one {
+    width: 330px;
+    height: 330px;
+  }
+
+  .rum-ring-two {
+    width: 420px;
+    height: 420px;
+  }
+
+  .rum-stage-caption {
+    gap: 15px;
+    font-size: 7px;
+  }
+
+  .rum-heritage-heading h2,
+  .rum-character h2,
+  .rum-connect h2 {
+    font-size: clamp(52px, 16vw, 85px);
+  }
+
+  .rum-story-block {
+    min-height: 500px;
+    padding: 80px 7vw;
+  }
+
+  .rum-story-overlay h2 {
+    font-size: clamp(68px, 19vw, 110px);
+  }
+
+  .rum-signature {
+    min-height: 75vh;
+    padding: 100px 7vw;
+  }
+
+  .rum-signature h2 {
+    font-size: clamp(65px, 19vw, 115px);
+  }
+
+  .rum-footer {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .rum-footer div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
